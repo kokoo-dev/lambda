@@ -1,5 +1,5 @@
 package com.kokoo.lambda.example;
 
 public interface Printer {
-    public void printArgStr(String s);
+    public void printArgStr(Object object);
 }

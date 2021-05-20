@@ -1,6 +1,7 @@
 package com.kokoo.lambda;
 
 import com.kokoo.lambda.example.Lambda;
+import com.kokoo.lambda.example.MethodReference;
 import com.kokoo.lambda.example.StreamExample;
 
 public class Main {
@@ -10,6 +11,17 @@ public class Main {
         Lambda.run();
 
         System.out.println("Stream Run");
-        StreamExample.run();
+        StreamExample streamExample = new StreamExample();
+        streamExample.executeCount();
+        streamExample.executeDistinct();
+        streamExample.executeFilter();
+        streamExample.executeForEach();
+        streamExample.executeMap();
+        streamExample.executeMatch();
+        streamExample.executeSorted();
+
+        MethodReference.executeStaticMethod();
+        MethodReference.executeConstructor();
+        MethodReference.executeInstanceMethod();
     }
 }
