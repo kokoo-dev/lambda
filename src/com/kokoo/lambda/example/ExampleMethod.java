@@ -5,4 +5,9 @@ public class ExampleMethod {
         Class cls = object.getClass();
         System.out.println(cls.getName());
     }
+
+    public void printClassInstance(Object object){
+        Class cls = object.getClass();
+        System.out.println(cls.getName());
+    }
 }

@@ -18,6 +18,10 @@ public class MethodReference {
     }
 
     public static void executeInstanceMethod(){
+        ExampleMethod exampleMethod = new ExampleMethod();
+        Printer printer = exampleMethod::printClassInstance;
+        printer.printArgStr(new String(""));
+
         List<Person> personList = Arrays.asList(new Person("김린이", 10), new Person("김성인", 30), new Person("김노인", 80));
 
         personList.stream().forEach(Person::print);
@@ -28,6 +32,4 @@ public class MethodReference {
         Printer printer = ExampleMethod::printClass;
         printer.printArgStr(str);
     }
-
-
 }
